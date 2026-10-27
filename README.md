@@ -21,3 +21,23 @@ a roadmap such as NeetCode 150, which is stored as data so other roadmaps can be
 - **Pydantic**: checks that incoming data is valid
 - **Pytest**: automated tests
 - **uv**: manages the project's Python packages
+
+## How to run
+
+1. Install the dependencies:
+
+   ```bash
+   uv sync
+   ```
+
+2. Start the server:
+
+   ```bash
+   uv run uvicorn main:app --reload
+   ```
+
+3. Open these in your browser:
+   - http://127.0.0.1:8000/health shows `{"status":"ok"}`
+   - http://127.0.0.1:8000/docs shows the Swagger page
+
+To stop the server, press `Ctrl+C` in the terminal.
